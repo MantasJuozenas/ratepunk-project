@@ -1,0 +1,31 @@
+.main {
+  background-color: rgb(248, 204, 93);
+  min-height: 50vh;
+  padding: 10px;
+  border: 1px solid black;
+  border-top: none;
+
+  .formDiv {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(249, 244, 249);
+    padding: 10px;
+
+    .mainText {
+      font-size: 35px;
+    }
+
+    .infoText {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: normal;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+    }
+
+    .formFooter {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
