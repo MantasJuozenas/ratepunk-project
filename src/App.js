@@ -1,12 +1,10 @@
 import './App.css';
-import Header from './components/Header/Header';
-import ReferralForm from './components/ReferralForm/ReferralForm';
+import MainPage from './Pages/MainPage';
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <ReferralForm />
+      <MainPage />
     </div>
   );
 }
