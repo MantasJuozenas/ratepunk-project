@@ -1,6 +1,42 @@
 .container {
   background-color: rgb(69, 86, 94);
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #000;
   border-top: none;
+
+  .starsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .stars {
+      display: flex;
+      justify-content: space-around;
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .storeText {
+      color: white;
+      flex: 2;
+      font-size: 18px;
+      text-align: center;
+    }
+    .icon.fa {
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .span_2 {
+    grid-column: span 2;
+  }
 }

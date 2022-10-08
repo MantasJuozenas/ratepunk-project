@@ -1,9 +1,14 @@
 .main {
   background-color: rgb(248, 204, 93);
   min-height: 50vh;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid black;
   border-top: none;
+
+  .imgSize {
+    width: 144px;
+    height: 144px;
+  }
 
   .formDiv {
     border: 1px solid black;
@@ -16,16 +21,35 @@
     }
 
     .infoText {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-weight: normal;
-      font-size: 20px;
+      font-size: 13px;
       letter-spacing: 1.5px;
+      color: rgb(31, 52, 62);
     }
 
     .formFooter {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-weight: normal;
       font-size: 14px;
+      color: rgb(31, 52, 62);
     }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .infoBoxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .infoBoxes {
+    grid-template-columns: 1fr;
   }
 }

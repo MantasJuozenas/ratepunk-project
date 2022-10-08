@@ -1,0 +1,66 @@
+.footer {
+  padding: 20px;
+  background-color: rgb(249, 244, 249);
+
+  .footerInfo {
+    font-size: 21.3px;
+    color: rgb(31, 52, 62);
+  }
+
+  .quickLinks {
+    display: flex;
+    flex-direction: column;
+    .marginTB {
+      margin: 10px 0;
+      text-decoration: none;
+      color: rgb(31, 52, 62);
+      font-size: 20px;
+    }
+  }
+  .quick {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(31, 52, 62);
+  }
+
+  .contacts {
+    .info {
+      display: flex;
+      gap: 10px;
+      color: rgb(31, 52, 62);
+      font-size: 20px;
+    }
+  }
+
+  .social {
+    .icons {
+      display: flex;
+      gap: 8px;
+      .socialIcon {
+        width: 20px;
+        height: 20px;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(78, 179, 227);
+      }
+    }
+  }
+  .footerText {
+    color: rgb(109, 122, 129);
+    font-size: 20px;
+    margin: 40px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .span_3 {
+    grid-column: span 3;
+  }
+}
