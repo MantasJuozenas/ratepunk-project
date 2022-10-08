@@ -3,9 +3,9 @@ import Icon from '../../UI/Icon';
 import Paragraph from '../../UI/Paragraph';
 import style from './StoreDiv.module.scss';
 
-function StoreDiv({ img, alt, supInfo, mainInfo }) {
+function StoreDiv({ img, alt, supInfo, mainInfo, onClick }) {
   return (
-    <div className={style.storeDiv}>
+    <div className={style.storeDiv} onClick={(e) => onClick(e)}>
       <Icon img={img} alt={alt} classname={style.storeImage} />
       <div className={style.infoDiv}>
         <Paragraph classname={`${style.supInfo} font`} text={supInfo} />

@@ -17,3 +17,7 @@ body {
 .icon.fa {
   color: white;
 }
+
+.active {
+  color: rgb(99, 187, 230);
+}

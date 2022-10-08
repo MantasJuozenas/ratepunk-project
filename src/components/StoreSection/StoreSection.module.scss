@@ -15,6 +15,12 @@
       flex: 1;
       margin-left: 20px;
     }
+    .star {
+      transition: 0.5s;
+    }
+    .star:hover {
+      transform: scale(1.4);
+    }
 
     .storeText {
       color: white;
@@ -38,5 +44,14 @@
 
   .span_2 {
     grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .span_2 {
+    grid-column: span 1;
   }
 }

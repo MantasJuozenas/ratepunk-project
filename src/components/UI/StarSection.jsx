@@ -1,14 +1,14 @@
 import React from 'react';
 import Star from './Star';
 
-function StarSection({ classname }) {
+function StarSection({ classname, starClass }) {
   return (
     <div className={classname}>
-      <Star />
-      <Star />
-      <Star />
-      <Star />
-      <Star />
+      <Star starClass={starClass} />
+      <Star starClass={starClass} />
+      <Star starClass={starClass} />
+      <Star starClass={starClass} />
+      <Star starClass={starClass} />
     </div>
   );
 }

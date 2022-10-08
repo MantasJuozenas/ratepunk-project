@@ -3,31 +3,4 @@
   background-color: #fff;
   border: 1px solid black;
   padding: 20px;
-
-  .headerFlex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .navLinks {
-    display: flex;
-    gap: 30px;
-    display: none;
-    .navLink {
-      text-decoration: none;
-      color: rgb(31, 52, 62);
-    }
-  }
-}
-
-@media screen and (min-width: 580px) {
-  .header {
-    .info {
-      display: none;
-    }
-    .navLinks {
-      display: flex;
-    }
-  }
 }

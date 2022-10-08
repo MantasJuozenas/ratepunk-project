@@ -28,6 +28,7 @@
     }
 
     .formFooter {
+      margin-top: 50px;
       font-weight: normal;
       font-size: 14px;
       color: rgb(31, 52, 62);
@@ -47,6 +48,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .main {
+    .formDiv {
+      padding: 40px;
+    }
   }
 
   .infoBoxes {

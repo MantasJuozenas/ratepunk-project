@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon from '../UI/Icon';
 import style from './Footer.module.scss';
 import logo from '../../assets/logo.svg';
@@ -13,6 +13,29 @@ import tiktok from '../../assets/tiktok.svg';
 import ContainerWrapper from '../UI/ContainerWrapper';
 
 function Footer() {
+  const [active, setActive] = useState('Price Comparison');
+
+  function isActive(e) {
+    switch (e.target.textContent) {
+      case 'Chrome Extension':
+        setActive('Chrome Extension');
+        break;
+      case 'Price Comparison':
+        setActive('Price Comparison');
+        break;
+      case 'How It Works':
+        setActive('How It Works');
+        break;
+      case 'Ratepunk Blog':
+        setActive('Ratepunk Blog');
+        break;
+      case 'Privacy Policy':
+        setActive('Privacy Policy');
+        break;
+      default:
+        break;
+    }
+  }
   return (
     <footer className={style.footer}>
       <ContainerWrapper>
@@ -26,19 +49,39 @@ function Footer() {
           />
           <div className={style.quickLinks}>
             <Paragraph classname={`${style.quick} font`} text='QUICK LINKS' />
-            <Link className={`${style.marginTB} font`} to='/'>
+            <Link
+              onClick={(e) => isActive(e)}
+              className={active === 'Price Comparison' ? `${style.marginTB_active} font` : `${style.marginTB} font`}
+              to='/'
+            >
               Price Comparison
             </Link>
-            <Link className={`${style.marginTB} font`} to='/'>
+            <Link
+              onClick={(e) => isActive(e)}
+              className={active === 'Chrome Extension' ? `${style.marginTB_active} font` : `${style.marginTB} font`}
+              to='/'
+            >
               Chrome Extension
             </Link>
-            <Link className={`${style.marginTB} font`} to='/'>
+            <Link
+              onClick={(e) => isActive(e)}
+              className={active === 'How It Works' ? `${style.marginTB_active} font` : `${style.marginTB} font`}
+              to='/'
+            >
               How It Works
             </Link>
-            <Link className={`${style.marginTB} font`} to='/'>
+            <Link
+              onClick={(e) => isActive(e)}
+              className={active === 'Ratepunk Blog' ? `${style.marginTB_active} font` : `${style.marginTB} font`}
+              to='/'
+            >
               Ratepunk Blog
             </Link>
-            <Link className={`${style.marginTB} font`} to='/'>
+            <Link
+              onClick={(e) => isActive(e)}
+              className={active === 'Privacy Policy' ? `${style.marginTB_active} font` : `${style.marginTB} font`}
+              to='/'
+            >
               Privacy Policy
             </Link>
           </div>

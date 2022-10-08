@@ -5,6 +5,8 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+  transition: 0.2s ease-in-out;
+
   .infoDiv {
     flex: 1;
     padding-left: 10px;
@@ -29,4 +31,8 @@
   width: 55px;
   height: 55px;
   padding: 0 15px 5px 15px;
+}
+
+.storeDiv:hover {
+  transform: scale(1.1);
 }

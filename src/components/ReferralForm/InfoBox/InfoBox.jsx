@@ -4,7 +4,7 @@ import style from './InfoBox.module.scss';
 
 function InfoBox({ img, alt, stepText, mainText, subText, classname }) {
   return (
-    <div className={style.containerDiv}>
+    <div className={stepText === 'step 2' ? `${style.containerDiv_reverse}` : `${style.containerDiv}`}>
       <Icon classname={classname} img={img} alt={alt} />
       <div className={style.boxInfo}>
         <p className={`${style.step} font`}>{stepText}</p>

@@ -1,0 +1,39 @@
+.navLinks {
+  display: flex;
+  gap: 30px;
+  display: none;
+  .navLink {
+    text-decoration: none;
+    color: rgb(31, 52, 62);
+  }
+  .navLink_active {
+    text-decoration: none;
+    color: rgb(78, 179, 227);
+  }
+}
+.navLinks_mobile {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+
+  .navLink {
+    text-decoration: none;
+    color: rgb(31, 52, 62);
+  }
+  .navLink_active {
+    text-decoration: none;
+    color: rgb(78, 179, 227);
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .info {
+    display: none;
+  }
+  .navLinks {
+    display: flex;
+  }
+}
